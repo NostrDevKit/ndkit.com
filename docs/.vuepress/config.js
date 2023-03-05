@@ -246,7 +246,7 @@ module.exports = {
           ]
         }
       ],
-      copyright: 'Copyright © 2022 LDK Developers'
+      copyright: 'Copyright © 2022 NDK Developers'
     }
   }
 }
