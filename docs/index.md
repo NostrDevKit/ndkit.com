@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Nostr Dev Kit
-tagline: The simplest way to integrate Nostr into your application
+tagline: The simplest way to build with Nostr
 actionText: Get started
 actionLink: /introduction/
 features:

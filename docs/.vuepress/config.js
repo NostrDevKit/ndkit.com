@@ -1,10 +1,12 @@
 const { resolve } = require('path')
 const themeConfig = require('squarecrypto-vuepress-devkit-theme/config')
+// const md = require('markdown-it')()
+//            .use(require('markdown-it-plantuml'));
 
 const title = 'Nostr Dev Kit Documentation'
 const baseUrl = 'https://ndkit.com'
 const githubUrl = 'https://github.com/NostrDevKit'
-const discordUrl = 'https://discord.gg/5AcknnMfBw'
+// const discordUrl = 'https://discord.gg/5AcknnMfBw'
 const themeColor = '#ffffff'
 
 const docsSidebar = [
@@ -20,7 +22,7 @@ const docsSidebar = [
       //     ['/introduction/use_cases', 'Use Cases'],
       //   ]
       // },
-      '/hello-world',
+      '/hello-nostr',
       // '/running-a-sample-ldk-node',
       // {
       //   title: 'Overview',
@@ -61,7 +63,7 @@ const docsSidebar = [
       //     ['/blockchain_data/transaction_broadcasting', 'Transaction Broadcasting'],
       //   ]
       // },
-      '/key_management',
+      // '/key_management',
       '/examples',
     ]
   },
@@ -148,14 +150,14 @@ module.exports = {
         text: 'Docs',
         link: '/introduction/'
       },
-      {
-        text: 'Tutorials',
-        link: '/tutorials/getting-started'
-      },
-      {
-        text: 'Blog',
-        link: '/blog/'
-      },
+      // {
+      //   text: 'Tutorials',
+      //   link: '/tutorials/getting-started'
+      // },
+      // {
+      //   text: 'Blog',
+      //   link: '/blog/'
+      // },
       {
         text: 'GitHub',
         link: githubUrl,
@@ -178,8 +180,8 @@ module.exports = {
               link: '/introduction/'
             },
             {
-              text: 'Hello World',
-              link: '/hello-world/'
+              text: 'Hello Nostr',
+              link: '/hello-nostr/'
             },
             {
               text: 'Architecture',
