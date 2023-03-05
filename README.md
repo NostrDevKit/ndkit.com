@@ -1,4 +1,4 @@
-# Lightning Dev Kit Documentation
+# Nostr Dev Kit Documentation
 
 [![Build Status](https://github.com/NostrDevKit/ndkit.com/workflows/Build/badge.svg)](https://github.com/NostrDevKit/ndkit.com/actions?query=workflow%3A%22Build%22)
 
