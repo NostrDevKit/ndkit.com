@@ -183,14 +183,14 @@ module.exports = {
               text: 'Hello Nostr',
               link: '/hello-nostr/'
             },
-            {
-              text: 'Architecture',
-              link: '/overview/architecture/'
-            },
-            {
-              text: 'Key Management',
-              link: '/key_management/'
-            },
+            // {
+            //   text: 'Architecture',
+            //   link: '/overview/architecture/'
+            // },
+            // {
+            //   text: 'Key Management',
+            //   link: '/key_management/'
+            // },
             {
               text: 'Examples',
               link: '/examples/'
@@ -205,11 +205,11 @@ module.exports = {
               link: githubUrl,
               rel: 'noopener noreferrer'
             },
-            {
-              text: 'Twitter',
-              link: "https://twitter.com/lightningdevkit",
-              rel: 'noopener noreferrer'
-            },
+            // {
+            //   text: 'Twitter',
+            //   link: "https://twitter.com/lightningdevkit",
+            //   rel: 'noopener noreferrer'
+            // },
             // {
             //   text: 'Chat on Discord',
             //   link: discordUrl,
@@ -230,12 +230,11 @@ module.exports = {
               link: "/code_of_conduct",
               rel: 'noopener noreferrer'
             },
-            {
-              text: 'Reporting a Vulnerability',
-              link: "https://github.com/lightningdevkit/rust-lightning/blob/main/SECURITY.md",
-              rel: 'noopener noreferrer'
-            },
-
+            // {
+            //   text: 'Reporting a Vulnerability',
+            //   link: "https://github.com/lightningdevkit/rust-lightning/blob/main/SECURITY.md",
+            //   rel: 'noopener noreferrer'
+            // },
           ]
         },
         {

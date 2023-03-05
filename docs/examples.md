@@ -2,23 +2,26 @@
 
 Click the links below and learn from community-built example projects
 
-### [Rust Sample Node](https://github.com/lightningdevkit/ldk-sample)
+### [Coinstr](https://github.com/NostrDevKit/coinstr)
 
-The sample serves as a complete reference for constructing a Lightning node with
-the LDK. This is a good starting point if you want a self-guided tour!
+[Coinstr](https://coinstr.app) is Bitcoin spending policy and signature orchestration engine using Nostr
 
-### [Java Sample Node](https://github.com/getlipa/ldk-sample-java)
+### [nostr-tool](https://github.com/0xtrr/nostr-tool)
 
-This repository contains a sample implementation of LDK as the result of following the steps described in [Building a Node with LDK in Java](/tutorials/build_a_node_in_java/).
+A simple CLI to send nostr events
 
-### [Kotlin Sample Node](https://github.com/BlueWallet/HelloLightning)
+### [Rana](https://github.com/grunch/rana)
 
-Kotlin based CLI lightning network server based on LDK. Provides HTTP-RPC interface.
+Mine public keys that can be used with nostr.
 
-### [Rust node with sample Lightning Signer integration](https://gitlab.com/lightning-signer/lnrod/)
+### [Nostr Signer](https://github.com/rust-nostr/nostr-signer)
 
-A Rust Lightning node implementation based on the LDK and the Lightning Signer projects. Aims to be production ready at some point.
+CLI implementation of [NIP-46 Nostr Connect](https://github.com/nostr-protocol/nips/blob/master/46.md)
 
-### [Rust node with sample Tor integration](https://github.com/TonyGiorgio/ldk-sample-tor)
+### [keystr-rs](https://github.com/keystr/keystr-rs)
 
-A Rust Lightning node sample implementation based on LDK with an embedded Tor daemon.
+An application for managing Nostr keys. Written in Rust, with simple UI (Iced).
+
+### [Bitcoin Alerts](https://github.com/keystr/keystr-rs)
+
+Receive Bitcoin network alerts: hashrate, supply, blocks until halving, difficulty adjustment and more. See how alerts are [dispatched to Nostr](https://github.com/yukibtc/bitcoin-alerts/blob/master/src/dispatcher/nostr.rs).
