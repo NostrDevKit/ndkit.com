@@ -1,3 +1,17 @@
+<head>
+  <title>Hello Nostr Tutorial</title>
+  <meta charSet="utf-8" />
+  <meta property="og:title" content="Hello Nostr Tutorial" />
+  <meta property="og:image" content="https://ndkit.com/card.png" />
+  <meta property="og:description" content="Hello Nostr is a gentle, beginner-friendly introduction to building applications with the Nostr protocol. Step by step video included." />
+  <meta property="og:url" content="https://ndkit.com" />
+  <meta name="twitter:title" content="Hello Nostr Tutorial" />
+  <meta name="twitter:creator" content="@MaxGravitt">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://ndkit.com/card.png" />
+  <meta name="twitter:description" content="Hello Nostr is a gentle, beginner-friendly introduction to building applications with the Nostr protocol. Step by step video included." />
+</head>
+
 # Hello Nostr
 Let's start with the basics. We'll ensure we have a compatible Rust toolchain installed, create a new Rust binary, post a message (event) to a couple of relays, and retrieve the message.
 

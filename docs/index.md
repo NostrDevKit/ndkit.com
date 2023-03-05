@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Nostr Dev Kit
-tagline: The simplest way to build with Nostr
+tagline: The fastest way to build with Nostr
 actionText: Get started
 actionLink: /introduction/
 features:
@@ -15,6 +15,20 @@ features:
   details: "Work great in all environments from mobile phones to embedded devices, IoT devices, and kubernetes."
   image: "mobile"
 ---
+
+<head>
+  <title>Nostr Dev Kit</title>
+  <meta charSet="utf-8" />
+  <meta property="og:title" content="Nostr Dev Kit" />
+  <meta property="og:image" content="https://ndkit.com/card.png" />
+  <meta property="og:description" content="Nostr Dev Kit is the fastest way to build with the Nostr protocol" />
+  <meta property="og:url" content="https://ndkit.com" />
+  <meta name="twitter:title" content="Nostr Dev Kit" />
+  <meta name="twitter:creator" content="@MaxGravitt">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://ndkit.com/card.png" />
+  <meta name="twitter:description" content="Nostr Dev Kit is the fastest way to build with the Nostr protocol" />
+</head>
 
 <div class="intro">
 <h2>Why NDK?</h2>
