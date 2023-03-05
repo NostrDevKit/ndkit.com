@@ -115,7 +115,7 @@ const blogSidebar = [
 
 module.exports = {
   title,
-  description: 'NDK is a flexible Nostr implementation broad and well tested support for most NIPs',
+  description: 'NDK is the fastest way to build with the Nostr protocol',
   theme: resolve(__dirname, '../../node_modules/squarecrypto-vuepress-devkit-theme'),
   ...themeConfig({
     baseUrl,

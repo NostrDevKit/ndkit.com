@@ -1,6 +1,10 @@
 # Hello Nostr
 Let's start with the basics. We'll ensure we have a compatible Rust toolchain installed, create a new Rust binary, post a message (event) to a couple of relays, and retrieve the message.
 
+This companion video walks through the steps of the tutorial.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7O0bcd2XN4" frameborder="0" allowfullscreen></iframe>
+
 ## Installing Rust
 If you already have a working installation of the latest Rust compiler, feel free to skip to the next section.
 

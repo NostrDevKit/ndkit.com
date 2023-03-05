@@ -36,8 +36,5 @@
     "squarecrypto-vuepress-devkit-theme": "0.4.4",
     "start-server-and-test": "1.14.0",
     "vuepress": "1.9.7"
-  },
-  "dependencies": {
-    "markdown-it-plantuml": "^1.4.1"
   }
 }
