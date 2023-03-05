@@ -72,7 +72,7 @@ const docsSidebar = [
     collapsable: false,
     children: [
       {
-        title: "Rust (TODO)",
+        title: "Rust",
         collapsable: true,
         children: [
           ['https://docs.rs/nostr-sdk/latest/nostr_sdk/', 'nostr_sdk'],
