@@ -38,16 +38,12 @@ features:
 <div class="features">
 <div class="feature">
 <h3>Multi-Language Support</h3>
-
 We support native API's including Rust, C, Swift, Javascript, Flutter, Java & Kotlin so you can build Nostr applications in your preferred programming language. 
-
 </div>
 
 <div class="feature">
 <h3>WASM Compatibility</h3>
-
 Most of our libraries compile to WebAssembly so that they can be integrated into virtual machines, embedded devices, mobile or web applications.
-
 </div>
 
 <div class="feature">
