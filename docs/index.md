@@ -6,47 +6,47 @@ actionText: Get started
 actionLink: /introduction/
 features:
 - title: "Customizable"
-  details: "Designed from the ground up to be easily customized to your application needs: persistence, networking, chain source, routing, key management, wallet, you name it."
+  details: "Exposes an easy-to-use SDK abstraction while still allowing access to the low-level types for precision control."
   image: "customizable"
 - title: "Focus on what matters"
-  details: "A full implementation of the Lightning Network protocol, so you can focus on crafting custom-tailored user experiences."
+  details: "A full implementation of the Nostr protocol, so you can focus on crafting custom-tailored user experiences."
   image: "focus"
 - title: "High performance & compact"
-  details: "As lightweight as you need it to be and optimized to run on all embedded devices such as mobile phones, IoT devices, PoS terminals and more."
+  details: "Work great in all environments from mobile phones to embedded devices, IoT devices, and kubernetes."
   image: "mobile"
 ---
 
 <div class="intro">
 <h2>Why NDK?</h2>
-<p>Easily integrate Lightning features into any Bitcoin wallet</p>
+<p>Easily integrate Nostr features into any application</p>
 </div>
 
 <div class="features">
 <div class="feature">
 <h3>Multi-Language Support</h3>
 
-We support native API's including Rust, C, Swift, Java & Kotlin so you can build Lightning applications in your preferred programming language. 
+We support native API's including Rust, C, Swift, Javascript, Flutter, Java & Kotlin so you can build Nostr applications in your preferred programming language. 
 
 </div>
 
 <div class="feature">
-<h3>Custom Persistent Storage</h3>
+<h3>WASM Compatibility</h3>
 
-Our API's let you choose how to backup channel state. This gives you multi-wallet device access and lets you save state locally, to the cloud or an alternative backup scheme.
-
-</div>
-
-<div class="feature">
-<h3>Custom Block Data Sources</h3>
-
-Use a local full node, an SPV node, or your own Electrum server with API access to source data about the blockchain  and feed it to LDK for decision-making about whether to sign a state update.
+Most of our libraries compile to WebAssembly so that they can be integrated into virtual machines, embedded devices, mobile or web applications.
 
 </div>
 
 <div class="feature">
-<h3>Unified Wallet</h3>
+<h3>Broad NIP Support</h3>
 
-No need to create separate Bitcoin & Lightning wallets, forcing users to backup an additional recovery phrase. Instead, we let you define your own wallet and create one unified experience. 
+NDK supports most relevant NIPs and quickly introduces support for those merged into the protocol specification.
+
+</div>
+
+<div class="feature">
+<h3>Bitcoin Integrations</h3>
+
+Our code and ethos align to Bitcoin development and many of our code samples feature Bitcoin use cases.
 
 </div>
 </div>

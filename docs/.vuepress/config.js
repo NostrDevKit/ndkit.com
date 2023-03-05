@@ -12,54 +12,55 @@ const docsSidebar = [
     title: 'Documentation',
     collapsable: false,
     children: [
-      {
-        title: 'Introduction',
-        path: '/introduction/',
-        collapsable: true,
-        children: [
-          ['/introduction/use_cases', 'Use Cases'],
-        ]
-      },
-      '/running-a-sample-ldk-node',
-      {
-        title: 'Overview',
-        collapsable: true,
-        children: [
-          ['/overview/architecture', 'Architecture'],
-          ['/overview/peer-management', 'Peer Management'],
-          ['/overview/persistent_storage', 'Persistent Storage'],
-          ['/overview/blockchain_data', 'Blockchain Data'],
-          ['/overview/wallet_management', 'Wallet Management'],
-          ['/overview/networking', 'Networking'],
-          ['/overview/private_key_management', 'Private Key Management'],
-          ['/overview/transactions', 'Transactions'],
-          ['/overview/random_number_generation', 'Random Number Generation'],
-        ]
-      },
-      {
-        title: 'Payments',
-        path: '/payments/',
-        collapsable: true,
-        children: [
-          ['/payments/connecting_peers', 'Connecting Peers'],
-          ['/payments/managing_channels', 'Managing Channels'],
-          ['/payments/sending_payments', 'Sending Payments'],
-          ['/payments/receiving_payments', 'Receiving Payments'],
-        ]
-      },
-      {
-        title: 'Blockchain Data',
-        collapsable: true,
-        children: [
-          ['/blockchain_data/introduction', 'Introduction'],
-          ['/blockchain_data/chain_activity', 'Chain Activity'],
-          ['/blockchain_data/block_source', 'Block Source'],
-          ['/blockchain_data/full_blocks', 'Full Blocks'],
-          ['/blockchain_data/pre_filtered_blocks', 'Pre-filtered Blocks'],
-          ['/blockchain_data/confirmed_transactions', 'Confirmed Transactions'],
-          ['/blockchain_data/transaction_broadcasting', 'Transaction Broadcasting'],
-        ]
-      },
+      // {
+      //   title: 'Introduction',
+      //   path: '/introduction/',
+      //   collapsable: true,
+      //   children: [
+      //     ['/introduction/use_cases', 'Use Cases'],
+      //   ]
+      // },
+      '/hello-world',
+      // '/running-a-sample-ldk-node',
+      // {
+      //   title: 'Overview',
+      //   collapsable: true,
+      //   children: [
+      //     ['/overview/architecture', 'Architecture'],
+      //     ['/overview/peer-management', 'Peer Management'],
+      //     ['/overview/persistent_storage', 'Persistent Storage'],
+      //     ['/overview/blockchain_data', 'Blockchain Data'],
+      //     ['/overview/wallet_management', 'Wallet Management'],
+      //     ['/overview/networking', 'Networking'],
+      //     ['/overview/private_key_management', 'Private Key Management'],
+      //     ['/overview/transactions', 'Transactions'],
+      //     ['/overview/random_number_generation', 'Random Number Generation'],
+      //   ]
+      // },
+      // {
+      //   title: 'Payments',
+      //   path: '/payments/',
+      //   collapsable: true,
+      //   children: [
+      //     ['/payments/connecting_peers', 'Connecting Peers'],
+      //     ['/payments/managing_channels', 'Managing Channels'],
+      //     ['/payments/sending_payments', 'Sending Payments'],
+      //     ['/payments/receiving_payments', 'Receiving Payments'],
+      //   ]
+      // },
+      // {
+      //   title: 'Blockchain Data',
+      //   collapsable: true,
+      //   children: [
+      //     ['/blockchain_data/introduction', 'Introduction'],
+      //     ['/blockchain_data/chain_activity', 'Chain Activity'],
+      //     ['/blockchain_data/block_source', 'Block Source'],
+      //     ['/blockchain_data/full_blocks', 'Full Blocks'],
+      //     ['/blockchain_data/pre_filtered_blocks', 'Pre-filtered Blocks'],
+      //     ['/blockchain_data/confirmed_transactions', 'Confirmed Transactions'],
+      //     ['/blockchain_data/transaction_broadcasting', 'Transaction Broadcasting'],
+      //   ]
+      // },
       '/key_management',
       '/examples',
     ]
@@ -69,19 +70,19 @@ const docsSidebar = [
     collapsable: false,
     children: [
       {
-        title: "Rust",
+        title: "Rust (TODO)",
         collapsable: true,
         children: [
           ['https://docs.rs/lightning/*/lightning/', 'lightning'],
-          ['https://docs.rs/lightning-background-processor/*/lightning_background_processor/', 'lightning-background-processor'],
-          ['https://docs.rs/lightning-block-sync/*/lightning_block_sync/', 'lightning-block-sync'],
-          ['https://docs.rs/lightning-invoice/*/lightning_invoice/', 'lightning-invoice'],
-          ['https://docs.rs/lightning-net-tokio/*/lightning_net_tokio/', 'lightning-net-tokio'],
-          ['https://docs.rs/lightning-persister/*/lightning_persister/', 'lightning-persister'],
-          ['https://docs.rs/lightning-rapid-gossip-sync/*/lightning_rapid_gossip_sync/', 'lightning-rapid-gossip-sync']
+          // ['https://docs.rs/lightning-background-processor/*/lightning_background_processor/', 'lightning-background-processor'],
+          // ['https://docs.rs/lightning-block-sync/*/lightning_block_sync/', 'lightning-block-sync'],
+          // ['https://docs.rs/lightning-invoice/*/lightning_invoice/', 'lightning-invoice'],
+          // ['https://docs.rs/lightning-net-tokio/*/lightning_net_tokio/', 'lightning-net-tokio'],
+          // ['https://docs.rs/lightning-persister/*/lightning_persister/', 'lightning-persister'],
+          // ['https://docs.rs/lightning-rapid-gossip-sync/*/lightning_rapid_gossip_sync/', 'lightning-rapid-gossip-sync']
         ]
       },
-      ['https://github.com/arik-so/SwiftLightning/tree/master/Documentation', 'Swift']
+      ['https://github.com/arik-so/SwiftLightning/tree/master/Documentation', 'Swift (TODO)']
     ],
   }
 ]
@@ -92,8 +93,8 @@ const tutorialSidebar = [
     collapsable: false,
     children: [
       '/tutorials/getting-started',
-      '/tutorials/build_a_node_in_java',
-      '/tutorials/build_a_node_in_rust'
+      // '/tutorials/build_a_node_in_java',
+      // '/tutorials/build_a_node_in_rust'
     ],
   }
 ]
@@ -156,11 +157,6 @@ module.exports = {
         link: '/blog/'
       },
       {
-        text: 'Discord',
-        link: discordUrl,
-        rel: 'noopener noreferrer'
-      },
-      {
         text: 'GitHub',
         link: githubUrl,
         rel: 'noopener noreferrer'
@@ -182,20 +178,12 @@ module.exports = {
               link: '/introduction/'
             },
             {
-              text: 'Sample LDK node',
-              link: '/running-a-sample-ldk-node/'
+              text: 'Hello World',
+              link: '/hello-world/'
             },
             {
               text: 'Architecture',
               link: '/overview/architecture/'
-            },
-            {
-              text: 'Payments',
-              link: '/payments/'
-            },
-            {
-              text: 'Blockchain Data',
-              link: '/blockchain_data/introduction/'
             },
             {
               text: 'Key Management',
@@ -220,21 +208,21 @@ module.exports = {
               link: "https://twitter.com/lightningdevkit",
               rel: 'noopener noreferrer'
             },
-            {
-              text: 'Chat on Discord',
-              link: discordUrl,
-              rel: 'noopener noreferrer'
-            },
-            {
-              text: 'LDK Calendar',
-              link: "https://calendar.google.com/calendar/embed?src=c_e6fv6vlshbpoob2mmbvblkkoj4%40group.calendar.google.com",
-              rel: 'noopener noreferrer'
-            },
-            {
-              text: 'LDK Review Club',
-              link: "http://ldk.reviews/",
-              rel: 'noopener noreferrer'
-            },
+            // {
+            //   text: 'Chat on Discord',
+            //   link: discordUrl,
+            //   rel: 'noopener noreferrer'
+            // },
+            // {
+            //   text: 'LDK Calendar',
+            //   link: "https://calendar.google.com/calendar/embed?src=c_e6fv6vlshbpoob2mmbvblkkoj4%40group.calendar.google.com",
+            //   rel: 'noopener noreferrer'
+            // },
+            // {
+            //   text: 'LDK Review Club',
+            //   link: "http://ldk.reviews/",
+            //   rel: 'noopener noreferrer'
+            // },
             {
               text: 'Code of Conduct',
               link: "/code_of_conduct",

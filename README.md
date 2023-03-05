@@ -52,16 +52,16 @@ To improve the meta attributes of a specific page, you can add them as YAML fron
 
 ```text
 ---
-description: How to integrate LDK
+description: How to integrate NDK
 tags:
 - WooCommerce
 - WordPress
 - Plugin
 - eCommerce
 ---
-# LDK integration
+# NDK integration
 
-This document explains how to **integrate LDK into your stack**.
+This document explains how to **integrate NDK into your stack**.
 ```
 
 ### Embedding YouTube videos
