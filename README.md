@@ -1,6 +1,6 @@
 # Lightning Dev Kit Documentation
 
-[![Build Status](https://github.com/lightningdevkit/lightningdevkit.org/workflows/Build/badge.svg)](https://github.com/lightningdevkit/lightningdevkit.org/actions?query=workflow%3A%22Build%22)
+[![Build Status](https://github.com/NostrDevKit/ndkit.com/workflows/Build/badge.svg)](https://github.com/NostrDevKit/ndkit.com/actions?query=workflow%3A%22Build%22)
 
 ### Build the Documentation Locally
 

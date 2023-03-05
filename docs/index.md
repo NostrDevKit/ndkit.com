@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: Lightning Dev Kit
-tagline: The simplest way to integrate Lightning into your Bitcoin wallet
+heroText: Nostr Dev Kit
+tagline: The simplest way to integrate Nostr into your application
 actionText: Get started
 actionLink: /introduction/
 features:
@@ -17,7 +17,7 @@ features:
 ---
 
 <div class="intro">
-<h2>Why LDK?</h2>
+<h2>Why NDK?</h2>
 <p>Easily integrate Lightning features into any Bitcoin wallet</p>
 </div>
 

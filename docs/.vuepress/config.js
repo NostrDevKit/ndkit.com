@@ -1,9 +1,9 @@
 const { resolve } = require('path')
 const themeConfig = require('squarecrypto-vuepress-devkit-theme/config')
 
-const title = 'Lightning Dev Kit Documentation'
-const baseUrl = 'https://lightningdevkit.org'
-const githubUrl = 'https://github.com/lightningdevkit'
+const title = 'Nostr Dev Kit Documentation'
+const baseUrl = 'https://ndkit.com'
+const githubUrl = 'https://github.com/NostrDevKit'
 const discordUrl = 'https://discord.gg/5AcknnMfBw'
 const themeColor = '#ffffff'
 
@@ -112,25 +112,25 @@ const blogSidebar = [
 
 module.exports = {
   title,
-  description: 'LDK is a flexible lightning implementation with supporting batteries (or modules).',
+  description: 'NDK is a flexible Nostr implementation broad and well tested support for most NIPs',
   theme: resolve(__dirname, '../../node_modules/squarecrypto-vuepress-devkit-theme'),
   ...themeConfig({
     baseUrl,
     title,
     themeColor,
-    tags: ['Bitcoin', 'Lightning', 'LDK', 'Lightning Dev Kit', 'Documentation']
+    tags: ['Bitcoin', 'Lightning', 'NDK', 'Nostr Dev Kit', 'Lightning Dev Kit', 'Documentation']
   }),
   themeConfig: {
     domain: baseUrl,
     logo: '/img/logo.svg',
     displayAllHeaders: false,
-    repo: 'lightningdevkit/lightningdevkit.org',
+    repo: 'NostrDevKit/ndkit.com',
     docsDir: 'docs',
     docsBranch: 'main',
     editLinks: true,
     sidebarDepth: 0,
     algolia: {
-      indexName: 'lightningdevkit',
+      indexName: 'NostrDevKit',
       appId: 'BH4D9OD16A',
       apiKey: '17ed8a4e16a1cb7d94da4e96f2ff817f',
       // See https://www.algolia.com/doc/api-reference/api-parameters/

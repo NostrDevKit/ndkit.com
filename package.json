@@ -1,19 +1,20 @@
 {
-  "name": "lightningdevkit.org",
+  "name": "ndkit.com",
   "version": "1.0.0",
-  "description": "Lightning Dev Kit Documentation",
-  "author": "Lightning Dev Kit",
+  "description": "Nostr Dev Kit Documentation",
+  "author": "Nostr Dev Kit",
   "license": "MIT",
-  "bugs": "https://github.com/lightningdevkit/lightningdevkit.org/issues",
-  "homepage": "https://lightningdevkit.org",
+  "bugs": "https://github.com/NostrDevKit/ndkit.com/issues",
+  "homepage": "https://ndkit.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lightningdevkit/lightningdevkit.org.git"
+    "url": "git+https://github.com/NostrDevKit/ndkit.com.git"
   },
   "keywords": [
     "bitcoin",
     "lightning",
-    "ldk",
+    "ndk",
+    "nostr",
     "documentation"
   ],
   "config": {
