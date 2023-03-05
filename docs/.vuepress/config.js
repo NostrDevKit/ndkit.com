@@ -73,8 +73,8 @@ const docsSidebar = [
         title: "Rust (TODO)",
         collapsable: true,
         children: [
-          ['https://docs.rs/lightning/*/lightning/', 'lightning'],
-          // ['https://docs.rs/lightning-background-processor/*/lightning_background_processor/', 'lightning-background-processor'],
+          ['https://docs.rs/nostr-sdk/latest/nostr_sdk/', 'nostr_sdk'],
+          ['https://docs.rs/nostr/latest/nostr/', 'nostr'],
           // ['https://docs.rs/lightning-block-sync/*/lightning_block_sync/', 'lightning-block-sync'],
           // ['https://docs.rs/lightning-invoice/*/lightning_invoice/', 'lightning-invoice'],
           // ['https://docs.rs/lightning-net-tokio/*/lightning_net_tokio/', 'lightning-net-tokio'],
@@ -82,7 +82,7 @@ const docsSidebar = [
           // ['https://docs.rs/lightning-rapid-gossip-sync/*/lightning_rapid_gossip_sync/', 'lightning-rapid-gossip-sync']
         ]
       },
-      ['https://github.com/arik-so/SwiftLightning/tree/master/Documentation', 'Swift (TODO)']
+      // ['https://github.com/arik-so/SwiftLightning/tree/master/Documentation', 'Swift (TODO)']
     ],
   }
 ]
