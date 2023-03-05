@@ -17,7 +17,7 @@ jobs:
         node-version: [16]
 
     steps:
-      # Checkout doc repo and its dependencies
+      # Checkout doc repo and its
       - name: Checkout
         uses: actions/checkout@v2
       # Setup Node
