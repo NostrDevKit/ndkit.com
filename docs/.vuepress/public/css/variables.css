@@ -5,13 +5,13 @@
 
   --docs-note-text: var(--docs-black) !important;
   --docs-note-bg: #F5F7FF !important;
-  --docs-code-bg: #E6EAFE;
+  --docs-code-bg: #061e97;
   --docs-pre-bg: #020A36;
 }
 
 :root[data-theme="dark"] {
   --docs-code-bg: #06463C;
-  --docs-pre-bg: #cccccc;
+  --docs-pre-bg: #01275f;
   --docs-note-text: var(--docs-white) !important;
   --docs-note-bg: var(--docs-pre-bg) !important;
 }
@@ -19,7 +19,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     --docs-code-bg: #06463C;
-    --docs-pre-bg: #cccccc;
+    --docs-pre-bg: #021270;
     --docs-note-text: var(--docs-white) !important;
     --docs-note-bg: var(--docs-pre-bg) !important;
   }

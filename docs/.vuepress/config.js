@@ -124,6 +124,7 @@ module.exports = {
     tags: ['Bitcoin', 'Lightning', 'NDK', 'Nostr Dev Kit', 'Lightning Dev Kit', 'Documentation']
   }),
   themeConfig: {
+    codeTheme: "default",
     domain: baseUrl,
     logo: '/img/logo.svg',
     displayAllHeaders: false,
@@ -154,10 +155,10 @@ module.exports = {
       //   text: 'Tutorials',
       //   link: '/tutorials/getting-started'
       // },
-      // {
-      //   text: 'Blog',
-      //   link: '/blog/'
-      // },
+      {
+        text: 'Blog',
+        link: '/blog/'
+      },
       {
         text: 'GitHub',
         link: githubUrl,
