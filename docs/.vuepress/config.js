@@ -14,14 +14,10 @@ const docsSidebar = [
     title: 'Documentation',
     collapsable: false,
     children: [
-      // {
-      //   title: 'Introduction',
-      //   path: '/introduction/',
-      //   collapsable: true,
-      //   children: [
-      //     ['/introduction/use_cases', 'Use Cases'],
-      //   ]
-      // },
+      {
+        title: 'Introduction',
+        path: '/introduction/',
+      },
       '/hello-nostr',
       // '/running-a-sample-ldk-node',
       // {
