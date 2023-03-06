@@ -205,11 +205,11 @@ module.exports = {
               link: githubUrl,
               rel: 'noopener noreferrer'
             },
-            // {
-            //   text: 'Twitter',
-            //   link: "https://twitter.com/lightningdevkit",
-            //   rel: 'noopener noreferrer'
-            // },
+            {
+              text: 'YouTube',
+              link: "https://www.youtube.com/@nostrdevkit",
+              rel: 'noopener noreferrer'
+            },
             // {
             //   text: 'Chat on Discord',
             //   link: discordUrl,

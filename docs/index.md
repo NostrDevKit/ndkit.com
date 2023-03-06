@@ -1,6 +1,7 @@
 ---
 home: true
 heroText: Nostr Dev Kit
+image: "https://ndkit.com/card.png"
 tagline: The fastest way to build with Nostr
 actionText: Get started
 actionLink: /introduction/
