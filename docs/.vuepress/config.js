@@ -77,11 +77,6 @@ const docsSidebar = [
         children: [
           ['https://docs.rs/nostr-sdk/latest/nostr_sdk/', 'nostr_sdk'],
           ['https://docs.rs/nostr/latest/nostr/', 'nostr'],
-          // ['https://docs.rs/lightning-block-sync/*/lightning_block_sync/', 'lightning-block-sync'],
-          // ['https://docs.rs/lightning-invoice/*/lightning_invoice/', 'lightning-invoice'],
-          // ['https://docs.rs/lightning-net-tokio/*/lightning_net_tokio/', 'lightning-net-tokio'],
-          // ['https://docs.rs/lightning-persister/*/lightning_persister/', 'lightning-persister'],
-          // ['https://docs.rs/lightning-rapid-gossip-sync/*/lightning_rapid_gossip_sync/', 'lightning-rapid-gossip-sync']
         ]
       },
       // ['https://github.com/arik-so/SwiftLightning/tree/master/Documentation', 'Swift (TODO)']
@@ -176,10 +171,6 @@ module.exports = {
         {
           title: 'Docs',
           children: [
-            {
-              text: 'Introduction',
-              link: '/introduction/'
-            },
             {
               text: 'Hello Nostr',
               link: '/hello-nostr/'
