@@ -18,6 +18,7 @@ const docsSidebar = [
         title: 'Introduction',
         path: '/introduction/',
       },
+      
       '/hello-nostr',
       // '/running-a-sample-ldk-node',
       // {
