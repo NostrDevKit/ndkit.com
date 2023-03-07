@@ -2,7 +2,7 @@
 
 Nostr Development Kit (NDK) is the easiest way to get started developing applications for Nostr. 
 
-Get started with our [Hello Nostr tutorial](nostr) and check back for frequent updates.
+Get started with our [Hello Nostr tutorial](/tutorials/hello-nostr) and check back for frequent updates.
 
 ### [`nostr-sdk` Rust Documentation](https://docs.rs/nostr-sdk/latest/nostr_sdk/)
 
