@@ -25,27 +25,3 @@ This will look something like this:
   });
 ```
 
-<!-- At a high level, the first step is initiating the `ChainMonitor` struct. -->
-
-<!-- For this step, you'll first need a few supporting objects that implements an interface. Each interface link is to the Rust docs which document the interface's requirements, and below is a sample of what the Java bindings should look like. -->
-<!-- 1. a logger, which is something that implements `LoggerInterface` -->
-<!-- ```java -->
-<!-- public static void main(String[] args) {  -->
-<!--     // LoggerInterface is a functional interface, so we can implement it with a lambda -->
-<!--     final logger = Logger.new_impl((String log) -> System.out.println(log)); -->
-<!-- } -->
-<!-- ``` -->
-<!-- 2. a fee estimator, which is something that implements `FeeEstimatorInterface` -->
-<!-- ```java -->
-<!--     .. -->
-<!--     final fee_estimator = FeeEstimator.new_impl(( -->
-<!-- ``` -->
-<!-- 3. a transaction broadcaster, which is something that implements `TransactionBroadcasterInterface` -->
-
-<!-- 4. a data persister, which is anything that implements `PersisterInterface` which is documented further [here], -->
-
-<!-- We're now ready to initialize our chain monitor:  -->
-<!-- ```java -->
-<!--     .. -->
-<!--     final chain_monitor = ChainMonitor.constructor_new(null, tx_broadcaster, logger, fee_estimator, persister); -->
-<!-- ``` -->
