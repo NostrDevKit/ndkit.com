@@ -26,8 +26,6 @@ impl BlockSource for Blockchain {
   </template>
 </CodeSwitcher>
 
-<!-- ADD JAVA EXAMPLE -->
-
 For instance, you may implement this interface by querying Bitcoin Core's JSON
 RPC interface, which happens to be a sample implementation provided by
 `lightning-block-sync`.
