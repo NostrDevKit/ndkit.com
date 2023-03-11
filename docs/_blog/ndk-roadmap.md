@@ -1,5 +1,5 @@
 ---
-title: "Nostr Dev Kit (NDK) Seeking Sponsorship & Road Map"
+title: "Nostr Dev Kit (NDK) Road Map"
 description: "NDK plans to build libraries and tools to make building on Nostr easy"
 date: "2023-03-11"
 authors:
