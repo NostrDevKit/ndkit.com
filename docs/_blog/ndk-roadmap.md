@@ -23,6 +23,10 @@ Our key priorities over the next 6-12 months are:
 7. Continue to develop [`coinstr`](https://github.com/NostrDevKit/coinstr), a protocol for orchestrating signature requests and PSBTs using Nostr.
 8. Pursue more alignment and support for `NIP-46` and NostrConnect as a safe way to sign, including the prospective support for signing Bitcoin transactions.
 
+As an example of the work, here you can see how we are using Nostr to save and load our Taptree bitcoin spending policies. 
+
+![image](https://user-images.githubusercontent.com/32852271/224490986-54c9408b-4a1f-4715-83e2-e7fa827d157b.png)
+
 ## About Rust and `rust-nostr`
 Rust is the most loved languaged and is the language of both BDK and LDK.
 
@@ -30,7 +34,7 @@ Yuki ([github](https://github.com/yukibtc), [nostr](https://snort.social/p/npub1
 
 The volume and value of the work being done is clear. 
 
-[image](github_contribs.png)
+![image](https://user-images.githubusercontent.com/32852271/224491049-e4f40b0b-af28-49ae-af80-31946449c8da.png)
 
 ### Contact 
 
