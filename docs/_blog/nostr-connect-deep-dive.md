@@ -1,47 +1,20 @@
 ---
-title: 🤿 Nostr Connect Technical Deep Dive
-date : 2023-03-04
-tags:
-  - security
-  - nostr
-slug: nostr-connect-deep-dive
-authors: Max Gravitt
+title: "Nostr Connect Technical Deep Dive"
+description: "technical deep dive into the Nostr Connect (NIP-46) protocol"
+date : "2023-03-14"
+authors: 
+  - "Max Gravitt"
 ---
-<head>
-  <title>🤿 Nostr Connect Technical Deep Dive</title>
-  <meta charSet="utf-8" />
-  <meta property="og:title" content="🤿 Nostr Connect Technical Deep Dive" />
-  <meta property="og:image" content="https://coinstr.app//articles/nostr-connect-deep-dive/bob-login-cover.png" />
-  <meta property="og:description" content="Nostr Connect can be used to create a seamless flow where users do their work in the browser, while signing using their devices safely and securely. This articles describes the UX and specific message flows for how a circuit is created and how Bob can login to update and publish his work from multiple devices." />
-  <meta property="og:url" content="https://coinstr.app/articles/nostr-connect-deep-dive" />
-  <meta name="twitter:title" content="🤿 Nostr Connect Technical Deep Dive" />
-  <meta name="twitter:creator" content="@MaxGravitt">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://coinstr.app//articles/nostr-connect-deep-dive/bob-login-cover.png" />
-  <meta name="twitter:description" content="Nostr Connect can be used to create a seamless flow where users do their work in the browser, while signing using their devices safely and securely. This articles describes the UX and specific message flows for how a circuit is created and how Bob can login to update and publish his work from multiple devices." />
-
-</head>
 
 Nostr Connect can be used to create a seamless flow where users do their work in the browser, while signing using their devices safely and securely. This articles describes the UX and specific message flows for how a circuit is created and how Bob can login to update and publish his work from multiple devices.
 
 This video is a demo of the rust-nostr libraries that implement NIP-46.
 
-{{< youtube dhPV58k9YNY >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dhPV58k9YNY" frameborder="0" allowfullscreen></iframe>
 
-# 📱 Logging In
-{{< plantuml id="au" >}}
-@startuml
-autonumber 1 1 "<font color=red><b>msg 0  "
-hnote over "Bobs Browser" : Running in Browser \non Bobs Desktop
-
-"Bobs Browser" -> Relay: New Subscription to Listen for Users
-"Bobs Browser" <-- "Bobs Phone": Scans QR Code for NC request
-"Bobs Phone" -> Relay: Signs NC requests and Broadcasts
-"Bobs Phone" -> Relay: Opens a subscription to receive events \nfrom Bobs Browser
-"Bobs Browser" <- Relay: Receives response over subscription
-hnote over "Bobs Browser" : Bob's Phone is connected \nto Bob's Browser
-
-@enduml{{< /plantuml >}}
+# Nostr Connect Step-by-Step
+### 📱 Logging In
+![image](https://user-images.githubusercontent.com/32852271/224999471-a10e4deb-ddbe-49d9-8811-ee3740097f6a.png)
 
 <font color=red>msg 1.</font> The webapp uses its private key to post a message to the relay that is awaiting for a party to establish a session. It also make a QR code or `nostrconnect://` link available on the site to scan. The `nostrconnect` string is static, and so the QR code is as well. 
 
@@ -70,7 +43,7 @@ const uri = `nostrconnect://${pubkey}?relay=${encodeURIComponent(relay)}&
 
 The events described above all ephempheral, meaning they are not saved on the relay longer than a few minutes. They are also encrypted, but they **do leak metadata** about who is logging into which applications via which relays. A closed relay could be used for more privacy.
 
-# 🖥️ Using the Application
+### 🖥️ Using the Application
 At this point, Bob is logged into the application on his browser. He may start to author some content, post some events (tweets), creating bitcoin spending policies, or propose spends.
 
 Let's say that he authors a long paper using markdown on his computer. He is not quite finished, but he wants to save it as a draft. 
@@ -79,20 +52,11 @@ In the application, he can perform a **Save** action. This would encrypt the doc
 
 When Bob approves, the signed event is returned the Bob's Browser via the Relay, where the WebApp then sends it to the relay as a NIP-04 encrypted message <font color=red>(msgs 12-14)</font>. 
 
-{{< plantuml id="auq" >}}
-@startuml
-autonumber 10 1 "<font color=red><b>msg 0  "
-hnote over "Bobs Browser" : Authoring Content...
-"Bobs Browser" <- "Bobs Phone": Bob clicks the Save Draft button \nin the Browser WebApp
-"Bobs Browser" -> Relay: Encrypts the Content, \nSends Request to Sign Event \nto save Draft to his Self Notes
-Relay ->  "Bobs Phone": Bob approves, Signs event\n encapsulated in a \nwrapper event
-"Bobs Phone" -> Relay: Sends the wrapper event \nback to the relay
-Relay -> "Bobs Browser": Receives, discards wrapper \nas ephemeral, and broadcasts \nthe signed note\n to the relay to be \nstored in Bobs Messages to Self
-@enduml{{< /plantuml >}}
+![image](https://user-images.githubusercontent.com/32852271/224999571-2246462d-340f-4a48-baa7-73b844a399ff.png)
 
 > *Do we need a LOG-OFF event to inform the Browser to end the subscription? (and also erase any local data)*
 
-# 💻 Later that Day (or Year)
+### 💻 Later that Day (or Year)
 Later that day, Bob begins working on his laptop and wants to finalize his paper and publish it to Nostr. 
 
 Bob goes to the URL of the application on his laptop browser and scans the QR to Login <font color=red>(msg 20)</font>. The same login sequence that occurred at the beginning occurs again to create a session.
@@ -103,34 +67,24 @@ That click in the Browser constructs an Event and encapsulates it in wrapper eve
 
 The approval is sent back to Bob's Browser where it is broadcast to a relay as the public post. It is only at this point that the content is accessible unencrypted by any audience or component outside of Bob's local systems <font color=red>(msg 24)</font>.
 
-{{< plantuml id="auz" >}}
-@startuml
-autonumber 20 1 "<font color=red><b>msg 0  "
-hnote over "Bobs Browser" : Now on Laptop
-"Bobs Browser" <-- "Bobs Phone": Logs in on Laptop,\n the same he did on Desktop above
-"Bobs Browser" <- Relay: Browser subscribes to events \nincluding the paper that \nwas saved in Notes to Self
-Relay ->  "Bobs Browser": When editing is complete, Bob \nclicks Publish. This triggers a\n signature request to go from the\n browser to the relay
-"Bobs Phone" <- Relay: The relay forwards the signature \nrequest through the subscription that \n Bob has on his phone \nand he asked to approve.
-Relay <- "Bobs Phone": The signed event of \nthe ready-to-publish paper
-hnote over Relay : Event is saved as \na Public Post
-@enduml{{< /plantuml >}}
+![image](https://user-images.githubusercontent.com/32852271/224999650-b440f0ca-f33b-4a56-8fff-fafdcec24315.png)
 
-# ✨ Summary
+## ✨ Summary
 Establishing secure, flexible, and real time communications between the browser and application and device makes many great use cases available for Nostr. 
 
 <hr/>
 
-# ₿ Postscript: Bitcoin Signatures in Nostr Connect (??)
+### ₿ Postscript: Bitcoin Signatures in Nostr Connect
 I am an admitted and unashamed stalker of open source developers. I noticed that yesterday, the author of the [Nostr Connect](https://github.com/nostr-connect/connect) protocol and the reference implementation [Nostrum](https://github.com/nostr-connect/nostrum) starred and forked a Javascript library for **signing and decoding Bitcoin transactions**. 
 
 [Coinstr](https://coinstr.app) is very interested in using this protocol to sign more than Nostr events, especially Bitcoin. We will keep a close eye on what transpires.
 
 <img src="https://user-images.githubusercontent.com/32852271/222914638-fe23a97b-d616-428e-8c52-42e316881c60.png" width="400"/>
 
-# Web3 Signing with Anchor on Telos
+### Web3 Signing with Anchor on Telos
 This is unrelated to Nostr and Nostr Connect, but the general UX of remote signing is very well done. It demonstrates using a remote signer on Telos.
 
-{{< youtube 2XYVnsAgyyM >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2XYVnsAgyyM" frameborder="0" allowfullscreen></iframe>
 
 [Follow Max on Nostr](https://snort.social/p/npub1ws2t95pdtpna4ps62rrz75mm6ujsudjv70yj2jk4wsqjhedlw22qsqwew9) to report any errors and for more articles and information about innovation around Nostr, Bitcoin and Lightning.
 
