@@ -89,7 +89,7 @@ module.exports = {
       },
       {
         text: 'Tutorials',
-        link: '/tutorials/'
+        link: '/tutorials/hello-nostr'
       },
       {
         text: 'Blog',
