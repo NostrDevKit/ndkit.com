@@ -5,6 +5,8 @@ This companion video walks through the steps of the tutorial.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jW5_6kZWuWU" frameborder="0" allowfullscreen></iframe>
 
+Here are the activities that we will cover in the tutorial:
+
 ![image](https://user-images.githubusercontent.com/32852271/227331892-d8447b4b-09be-4faf-9e05-b700350d1332.png)
 
 ## Step by Step - 2 of 2 Multisig
