@@ -44,7 +44,8 @@ const tutorialSidebar = [
     title: 'Tutorials',
     collapsable: false,
     children: [
-      '/tutorials/hello-nostr'
+      '/tutorials/hello-nostr',
+      '/tutorials/coinstr-cli'
     ],
   }
 ]
@@ -88,7 +89,7 @@ module.exports = {
       },
       {
         text: 'Tutorials',
-        link: '/tutorials/hello-nostr'
+        link: '/tutorials/'
       },
       {
         text: 'Blog',
