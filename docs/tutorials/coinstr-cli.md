@@ -21,8 +21,8 @@ Create keys and save them to keychains. I've used the keychain names of `frank` 
 `--password` is for encrypting your local keechain file, while `--passphrase` is applied to your mnemonic and alters the keys. Below, the password is set to `1234` and I am not using a passphrase.
 
 ```
-./target/release/coinstr-cli --network testnet generate --password 1234 --passphrase "" frank
-./target/release/coinstr-cli --network testnet generate --password 1234 --passphrase "" gary
+./target/release/coinstr-cli generate --password 1234 --passphrase "" frank
+./target/release/coinstr-cli generate --password 1234 --passphrase "" gary
 ```
 
 ### Inspect Keys
