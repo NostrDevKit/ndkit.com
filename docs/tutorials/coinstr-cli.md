@@ -1,20 +1,7 @@
 # Coinstr CLI
+This Coinstr CLI tutorial provides a step by step command line demo of using Coinstr to create and spend with a 2-of-2 multisignature. Step by step video included.]
 
-<head>
-  <title>Coinstr CLI Multisig Tutorial</title>
-  <meta charSet="utf-8" />
-  <meta property="og:title" content="Coinstr CLI Multisig Tutorial" />
-  <meta property="og:image" content="https://ndkit.com/card.png" />
-  <meta property="og:description" content="This Coinstr CLI tutorial provides a step by step command line demo of using Coinstr to create and spend with a 2-of-2 multisignature. Step by step video included." />
-  <meta property="og:url" content="https://ndkit.com" />
-  <meta name="twitter:title" content="Coinstr CLI Tutorial" />
-  <meta name="twitter:creator" content="@MaxGravitt">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://ndkit.com/card.png" />
-  <meta name="twitter:description" content="This Coinstr CLI tutorial provides a step by step command line demo of using Coinstr to create and spend with a 2-of-2 multisignature. Step by step video included." />
-</head>
-
-# Step by Step - 2 of 2 Multisig
+## Step by Step - 2 of 2 Multisig
 This step by step guide shows how to create a 2 of 2 multisignature Bitcoin transaction using `coinstr-cli`. 
 
 For this tutorial, you'll need to [install rust](https://rustup.rs) and also build Coinstr.
