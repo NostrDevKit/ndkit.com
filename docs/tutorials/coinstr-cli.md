@@ -1,5 +1,8 @@
 # Coinstr CLI
-This Coinstr CLI tutorial provides a step by step command line demo of using Coinstr to create and spend with a 2-of-2 multisignature. Step by step video included.]
+This Coinstr CLI tutorial provides a step by step command line demo of using Coinstr to create and spend with a 2-of-2 multisignature. Step by step video included.
+
+![image](coinstr-tutorial-usecases.png)
+
 
 ## Step by Step - 2 of 2 Multisig
 This step by step guide shows how to create a 2 of 2 multisignature Bitcoin transaction using `coinstr-cli`. 
