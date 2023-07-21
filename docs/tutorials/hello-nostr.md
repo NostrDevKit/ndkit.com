@@ -209,6 +209,8 @@ Filters are very powerful and include a lot of potential inputs. You can see the
         since: None,
         until: None,
         limit: None,
+        identifiers: None,
+        custom: Map::new(),
     };
 ```
 
