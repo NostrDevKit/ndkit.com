@@ -10,5 +10,5 @@ Get started with our [Hello Nostr tutorial](/tutorials/hello-nostr) and check ba
 
 ### [Hello Nostr](https://github.com/NostrDevKit/hello-nostr)
 
-The sample serves as a simple starting point and implements the program described in the [Hello Nostr tutorial](nostr)
+The sample serves as a simple starting point and implements the program described in the [Hello Nostr tutorial](/tutorials/hello-nostr)
 
